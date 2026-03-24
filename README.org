@@ -1,0 +1,50 @@
+#+title: Freecad Experiments
+
+* Some experiments of 3D modeling using Freecad and Rust.
+
+** Compiling and running the projects
+Each individual project is compiled with maturin:
+#+BEGIN_SRC sh
+maturin develop
+#+END_SRC
+
+Then inside the freecad console, adjusting the path for each project.
+#+BEGIN_SRC python
+exec(open("/home/emporas/repos/freecad/rust/roy/py_macro/roy.py").read())
+#+END_SRC
+
+*** [NOTE] Freecad's python path has to be exactly the same as maturin's python.
+
+** Roy
+Roy is an Inventory Management Tool for a supermarket. It is a CRUD skeleton, with it's own database and admin management tool
+
+To build the admin management tool (in the roy directory)
+#+BEGIN_SRC sh
+cargo build -p cli
+#+END_SRC
+
+*** Db
+How to create the database and fill with predefined items and buildings
+#+BEGIN_SRC sh
+./target/debug/cli create
+#+END_SRC
+
+How to delete the database
+#+BEGIN_SRC sh
+./target/debug/cli delete
+#+END_SRC
+
+How to change color of an item and make it green, using it's coordinates (the floor is divided into four segments, Kip, Ydr, Ele, Toi)
+#+BEGIN_SRC sh
+./target/debug/cli kifisos --item Ydr.5.1.1 -g
+#+END_SRC
+
+Changing to red
+#+BEGIN_SRC sh
+./target/debug/cli kifisos --item Ydr.5.1.1 -r
+#+END_SRC
+
+After each change in the database we reload the scene in Freecad.
+#+BEGIN_SRC python
+exec(open("/home/emporas/repos/freecad/rust/roy/py_macro/roy.py").read())
+#+END_SRC
