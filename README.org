@@ -1,7 +1,5 @@
 #+title: Freecad Experiments
-
 * Some experiments of 3D modeling using Freecad and Rust.
-
 ** Compiling and running the projects
 Each individual project is compiled with maturin:
 #+BEGIN_SRC sh
