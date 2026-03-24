@@ -1,0 +1,31 @@
+# Rust
+**/target/
+target/
+
+# Keep Cargo.lock for applications.
+# If a crate is a library and you prefer not to commit it, uncomment:
+# **/Cargo.lock
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+dist/
+build/
+*.egg-info/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

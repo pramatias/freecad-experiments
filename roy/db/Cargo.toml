@@ -1,0 +1,9 @@
+# /home/emporas/repos/freecad/rust/roy/db/Cargo.toml
+[package]
+name    = "db"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rusqlite = { version = "0.31", features = ["bundled"] }
+directories = "6.0.0"

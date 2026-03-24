@@ -1,0 +1,12 @@
+[package]
+name    = "primitives"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name      = "primitives"
+crate-type = ["rlib"]          # plain library, not a cdylib
+
+[dependencies]
+pyo3     = { version = "0.25.0" }   # no extension-module feature here
+nalgebra = "0.33"

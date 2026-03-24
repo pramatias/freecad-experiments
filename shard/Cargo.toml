@@ -1,0 +1,22 @@
+[workspace]
+members  = ["primitives"]
+resolver = "2"
+
+# ── Main (Python extension) crate ─────────────────────────────────────────────
+[package]
+name    = "shard"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name       = "shard"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3        = { version = "0.21", features = ["extension-module"] }
+primitives  = { path = "primitives" }
+
+[profile.release]
+lto            = true
+codegen-units  = 1
+opt-level      = 3

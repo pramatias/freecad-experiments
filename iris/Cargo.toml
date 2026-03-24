@@ -1,0 +1,13 @@
+[package]
+name = "iris"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "iris"
+crate-type = ["cdylib"]
+
+[dependencies]
+glam = "0.32.1"
+pyo3 = "0.25.0"
