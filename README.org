@@ -15,7 +15,7 @@ exec(open("/home/emporas/repos/freecad/rust/roy/py_macro/roy.py").read())
 
 
 *** [NOTE] Freecad's python path has to be exactly the same as maturin's python.
-*** [NOTE] To reload a macro exec again in the Python console. The user could try to refresh the project Roy, see how fast it reloads, by reading the scene through the py macro and comparing to the db. I was very curious how fast this operation would take (milliseconds).
+*** [NOTE] To reload a macro, write exec again (the same exec command as previously) in the Python console. The user could try to refresh the project Roy, see how fast it reloads, by reading the scene through the py macro and comparing it to the db. I was very curious how fast this operation would take (milliseconds).
 
 ** Roy
 Roy is an Inventory Management Tool for a supermarket. It is a CRUD skeleton, with it's own database and admin management tool
