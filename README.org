@@ -1,7 +1,8 @@
 #+title: Freecad Experiments
 * Some experiments of 3D modeling using Freecad and Rust.
-Full description in my webpage: [[file:freecadx/freecdx.html][my webpage]]
+Comprehensive description in my webpage: [[file:freecadx/freecdx.html][my webpage]] . (Isn't it very bad, when github repos have many images in their Readme?)
 
+* Technical details
 ** Compiling and running the projects
 Each individual project is compiled with maturin:
 #+BEGIN_SRC sh
