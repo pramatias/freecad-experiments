@@ -1,5 +1,7 @@
 #+title: Freecad Experiments
 * Some experiments of 3D modeling using Freecad and Rust.
+Full description in my webpage: [[file:freecadx/freecdx.html][my webpage]]
+
 ** Compiling and running the projects
 Each individual project is compiled with maturin:
 #+BEGIN_SRC sh
@@ -11,7 +13,9 @@ Then inside the freecad console, adjusting the path for each project.
 exec(open("/home/emporas/repos/freecad/rust/roy/py_macro/roy.py").read())
 #+END_SRC
 
+
 *** [NOTE] Freecad's python path has to be exactly the same as maturin's python.
+*** [NOTE] To reload a macro exec again in the Python console. The user could try to refresh the project Roy, see how fast it reloads, by reading the scene through the py macro and comparing to the db. I was very curious how fast this operation would take (milliseconds).
 
 ** Roy
 Roy is an Inventory Management Tool for a supermarket. It is a CRUD skeleton, with it's own database and admin management tool
