@@ -78,7 +78,7 @@ def _cylinder(doc, spec):
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
-# § 2  Group helpers  (identical API to shard.py)
+# § 2  Group helpers
 # ═══════════════════════════════════════════════════════════════════════════════
 
 def _find_or_create_group(doc, label: str, parent=None):
