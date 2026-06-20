@@ -1,0 +1,13 @@
+[package]
+name    = "leroy"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name       = "leroy"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3       = { version = "0.25.0", features = ["extension-module"] }
+primitives = { path = "../primitives" }
+logo = { path = "../logo" }

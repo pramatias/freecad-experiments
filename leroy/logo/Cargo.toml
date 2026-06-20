@@ -1,0 +1,8 @@
+[package]
+name = "logo"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+primitives = { path = "../primitives" }
+nalgebra = "0.33"
